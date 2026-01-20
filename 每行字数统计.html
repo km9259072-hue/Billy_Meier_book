@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>行字数统计与排序工具</title>
+    <style>
+        body { font-family: "Microsoft YaHei", sans-serif; padding: 20px; background: #f0f2f5; color: #333; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+        .container { display: flex; gap: 20px; height: 70vh; }
+        .box { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+        label { margin-bottom: 8px; font-weight: bold; display: flex; justify-content: space-between; }
+        textarea, .display-area { 
+            flex: 1; padding: 12px; font-size: 15px; line-height: 1.6; 
+            border: 1px solid #d9d9d9; border-radius: 6px; background: #fff;
+            overflow-y: auto; white-space: pre-wrap; word-break: break-all;
+        }
+        .count-column { flex: 0 0 80px; text-align: center; background: #fafafa; border-left: none; }
+        
+        /* 排序列表样式 */
+        .sort-container { margin-top: 20px; border: 1px solid #d9d9d9; border-radius: 6px; background: #fff; padding: 15px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border-bottom: 1px solid #eee; padding: 10px; text-align: left; }
+        th { background: #f5f5f5; }
+        .rank-tag { display: inline-block; padding: 2px 8px; border-radius: 10px; background: #1890ff; color: #fff; font-size: 12px; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h2>行字数统计与智能排序</h2>
+    <div>
+        <small>实时统计 | 自动对齐 | 长度排序</small>
+    </div>
+</div>
+
+<div class="container">
+    <div class="box">
+        <label>原文内容 (DOC/文本)</label>
+        <textarea id="input" placeholder="在此粘贴你的文档内容..." oninput="process()"></textarea>
+    </div>
+
+    <div class="box" style="flex: 0 0 100px;">
+        <label>对应字数</label>
+        <div id="lineCounts" class="display-area count-column"></div>
+    </div>
+</div>
+
+<div class="sort-container">
+    <label>📊 长度排行榜 (从大到小)</label>
+    <table>
+        <thead>
+            <tr>
+                <th width="80">排名</th>
+                <th width="100">字数</th>
+                <th>原文行预览</th>
+            </tr>
+        </thead>
+        <tbody id="sortList">
+            <tr><td colspan="3" style="text-align:center; color:#999;">等待输入内容...</td></tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    const input = document.getElementById('input');
+    const lineCounts = document.getElementById('lineCounts');
+    const sortList = document.getElementById('sortList');
+
+    function process() {
+        const text = input.value;
+        if (!text.trim()) {
+            lineCounts.innerHTML = '';
+            sortList.innerHTML = '<tr><td colspan="3" style="text-align:center; color:#999;">等待输入内容...</td></tr>';
+            return;
+        }
+
+        const lines = text.split('\n');
+        
+        // 1. 处理右侧实时对应统计
+        let countHtml = '';
+        const dataForSort = [];
+
+        lines.forEach((line, index) => {
+            const len = line.trim().length;
+            countHtml += `<div style="height:1.6em; border-bottom:1px solid #f0f0f0;">${len}</div>`;
+            
+            // 存入数组用于排序，只存有内容的行
+            if (line.trim().length > 0) {
+                dataForSort.push({
+                    content: line,
+                    length: len,
+                    originalIndex: index + 1
+                });
+            }
+        });
+        lineCounts.innerHTML = countHtml;
+
+        // 2. 处理排序
+        dataForSort.sort((a, b) => b.length - a.length);
+
+        // 3. 渲染排序表格
+        let sortHtml = '';
+        dataForSort.forEach((item, i) => {
+            sortHtml += `
+                <tr>
+                    <td><span class="rank-tag">${i + 1}</span></td>
+                    <td><strong>${item.length} 字</strong></td>
+                    <td style="color:#666; font-size:13px;">${item.content.substring(0, 100)}${item.content.length > 100 ? '...' : ''}</td>
+                </tr>
+            `;
+        });
+        sortList.innerHTML = sortHtml || '<tr><td colspan="3" style="text-align:center;">无有效内容</td></tr>';
+
+        // 同步滚动
+        input.onscroll = () => { lineCounts.scrollTop = input.scrollTop; };
+    }
+</script>
+
+</body>
+</html>
