@@ -14,6 +14,7 @@
 - [第144次接触](#第144次接触)
 - [第147次接触](#第147次接触)
 - [第263次接触](#第263次接触)
+- [第272次接触](#第272次接触)
 
 ---
 
@@ -112,3 +113,11 @@
 |  |  |  |
 |--|--|--|
 | ![](/static/image/263/CR263-Image1.jpg) | ![](/static/image/263/CR263-Image2.jpg) | ![](/static/image/263/CR263-Image3.jpg) |
+
+---
+
+### 第272次接触
+
+|  |  |  |
+|--|--|--|
+| ![](/static/image/272/CR272-Image1.jpg) | ![](/static/image/272/CR272-Image2.jpg) | ![](/static/image/272/CR272-Image4.jpg) |
