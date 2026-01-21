@@ -18,6 +18,8 @@ google:还有一个问题，可能有点傻，因为您之前说过我们不应�
 *** 
 ---
 _________________
+<hr style="border: none; border-top: 2px dotted #ccc;" />
+<hr style="border: none; border-top: 2px dashed #999;" />
 gemini:还有一个问题，这可能问得有点傻，因为你曾经说过，我们不应该制作电子书，因为它们对有效学习没有用。但我还是想问：你们自己也不制作电子书吗？
 
 <b>普塔：</b>
