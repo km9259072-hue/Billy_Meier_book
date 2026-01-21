@@ -2,10 +2,10 @@
 <table style="width: 100%; border-collapse: collapse; border: none; table-layout: fixed;">
   <tr style="border: none; background-color: transparent;">
     <th style="width: 50%; border: none; padding: 10px; text-align: left;">
-      ### 中文版 (Chinese Version)
+      <h3> 中文版 (Chinese Version)</h3>
     </th>
     <th style="width: 50%; border: none; padding: 10px; text-align: left;">
-      ### 英文版 (English Version)
+      <h3> 英文版 (English Version)</h3>
     </th>
   </tr>
   
