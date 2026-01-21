@@ -6,7 +6,7 @@
 
 ## 目录
 - [一、书籍](#一书籍)
-    - [1.1 电子书的危害](./content/TheDownsidesOfEBooks.md)
+    - [1.1 电子书的危害](./content/book/TheDownsidesOfEBooks.md)
 - [二、核心特性](#二核心特性)
 - [三、使用指南](#三使用指南)
     - [3.1 环境安装](#31-环境安装)
