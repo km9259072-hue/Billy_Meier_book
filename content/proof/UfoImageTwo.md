@@ -3,6 +3,7 @@
 ## 目录
 
 - [第31次接触](#第031次接触)
+- [第39次接触](#title-1)
 - [第282次接触](#第282次接触)
 - [第286次接触](#第286次接触)
 - [第287次接触](#第287次接触)
@@ -25,6 +26,15 @@
 | ![](/static/image/031/CR31-Image18.jpg) | ![](/static/image/031/CR31-Image24.jpg) | ![](/static/image/031/CR31-Image25.jpg) |
 | ![](/static/image/031/CR31-Image33.jpg) | ![](/static/image/031/CR31-Image34.jpg) | ![](/static/image/031/CR31-Image35.jpg) |
 | ![](/static/image/031/CR31-Image36.jpg) |  |  |
+
+---
+
+<a id="title-1"></a>
+### 第039次接触
+
+|  |  |  |
+|--|--|--|
+| ![](/static/image/039/CR39-Image2.jpg) | ![](/static/image/039/CR39-Image3.jpg) | - |
 
 ---
 
