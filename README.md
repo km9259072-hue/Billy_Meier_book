@@ -17,6 +17,7 @@
     - [7.2 UFO图片合集二](./content/proof/UfoImageTwo.md)
     - [7.3 其他图片](./content/img/Misc.md)
     - [7.4 人物图片](./content/img/Portrait.md)
+    - [7.2 UFO演示](./content/proof/UfoDemonstrate.md)
 
 ---
 
