@@ -218,13 +218,14 @@ Billy:
 
 Dann möchte ich noch etwas ansprechen, worüber wir – auch Quetzal und ich – einmal privaterweise gesprochen haben, was folglich nicht in einem Bericht festgehalten wurde. Andreas hat mich danach gefragt. Wenn ich rezitieren darf, was bei verschiedenen Gesprächen gesagt wurde:
 
-251.Kontakt, 3. Februar 1995
+<i>
+<p align="center"><strong>251.Kontakt, 3. Februar 1995</strong></p>
 
 Billy:
 
 So flüchteten zwei grosse Völker Genmanipulierter aus den Sirius-Gebieten und siedelten sich jenseits der Sonne an, was soviel bedeutet, dass sie sich auf sehr weit abseits liegenden Sonnensystemen resp. Planeten jenseits der Galaxis-Zentralsonne, der Milchstrasse-Zentralsonne, niederliessen und ansiedelten, um dort dann dereinst von Raumfahrern der alten Lyranerlinie entdeckt zu werden, wonach sie in die Lyra-Gebiete emigrierten und letztendlich dann in erst jüngerer Erdgeschichte auf diesen Planeten kamen, wo sie sich in China und Japan usw. ansiedelten und die chinesischen und japanischen Völker bildeten, woraus sich verschiedene neue Zweige resp. sogenannte Rassen ergaben.
 
-231.Kontakt, 9. November 1989
+<p align="center"><strong>231.Kontakt, 9. November 1989</strong></p>
 
 Quetzal:
 
@@ -244,7 +245,7 @@ Quetzal:
 
 267.Dann erfolgte später abermals eine grosse Kulturveränderung zur Bronzezeit, und zwar als Einwanderer.
 
-236.Kontakt, 26. April 1990
+<p align="center"><strong>236.Kontakt, 26. April 1990</strong></p>
 
 Ptaah:
 
@@ -265,6 +266,7 @@ Aha, und wo liegt denn dieses Jenseits der Sonne? Wenn ich richtig informiert bi
 Ptaah:
 
 202.Das entspricht den Gegebenheiten, ja.
+</i>
 
 Soweit also das. Dazu möchte ich dich bitten, dass du das Wichtigste ein andermal erklärst, damit ich es dann abrufen und einmal schriftlich festhalten kann.
 
